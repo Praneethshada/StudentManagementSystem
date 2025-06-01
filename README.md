@@ -34,29 +34,24 @@ The application supports basic CRUD (Create, Read, Update, Delete) operations on
 
 ### Database Setup
 
-1. Create a MySQL database named `student_db`:
+1. Create a MySQL database named `student_db`:  
 
-CREATE DATABASE student_db;
+CREATE DATABASE student_db;  
 USE student_db;
 
 
-Create the students table without auto-increment:
+Create the students table without auto-increment:  
 
-CREATE TABLE students (
-    id INT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    age INT,
-    course VARCHAR(100)
+CREATE TABLE students (  
+    id INT PRIMARY KEY,  
+    name VARCHAR(100) NOT NULL,  
+    age INT,  
+    course VARCHAR(100)  
 );
-Running the Project
-Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-Open the project in IntelliJ IDEA.
+Update the database connection credentials in StudentManagementSystem.java:  
 
-Update the database connection credentials in StudentManagementSystem.java:
-
-private static final String DB_USER = "root";
-private static final String DB_PASSWORD = "your_mysql_password";
+private static final String DB_USER = "root";  
+private static final String DB_PASSWORD = "your_mysql_password";  
 
 Build and run the Main class.
