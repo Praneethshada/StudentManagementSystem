@@ -40,7 +40,7 @@ CREATE DATABASE student_db;
 USE student_db;
 
 
-Create the students table without auto-increment:  
+2. Create the students table :  
 
 CREATE TABLE students (  
     id INT PRIMARY KEY,  
@@ -49,7 +49,7 @@ CREATE TABLE students (
     course VARCHAR(100)  
 );
 
-Update the database connection credentials in StudentManagementSystem.java:  
+3. Update the database connection credentials in StudentManagementSystem.java:  
 
 private static final String DB_USER = "root";  
 private static final String DB_PASSWORD = "your_mysql_password";  
